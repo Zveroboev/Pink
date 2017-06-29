@@ -15,7 +15,7 @@ var gulp         = require("gulp"),
     run          = require("run-sequence"),
     del          = require("del");
 
-gulp.task("style:css", function() {
+gulp.task("style", function() {
   gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -26,9 +26,11 @@ gulp.task("style:css", function() {
       ]})
     ]))
     .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("src/css"))
     .pipe(minifyCss())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("src/css"))
     .pipe(server.stream());
 });
 
@@ -95,5 +97,5 @@ gulp.task("copy", function() {
 });
 
 gulp.task("build", function(fn) {
-  run("clean", "copy", "style:css", "images", fn);
+  run("clean", "copy", "style", "images", fn);
 });

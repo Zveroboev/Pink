@@ -1,3 +1,36 @@
 .main-header {
   background-color: #283645;
 }
+
+.main-header__wrapper {
+
+}
+
+.main-header__title--hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header__header-top{
+  @include container();
+
+  border-bottom: 1px solid #000;
+}
+
+.main-header__wrapper {
+  @include wrapper();
+
+  display: flex;
+  justify-content: space-between;
+}
