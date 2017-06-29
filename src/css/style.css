@@ -405,7 +405,15 @@ template {
   font-style: normal; }
 
 .main-header {
-  background-color: #283645; }
+  background-color: #283645;
+  min-width: 320px;
+  margin: 0 auto; }
+  @media (min-width: 660px) {
+    .main-header {
+      width: 660px; } }
+  @media (min-width: 1150px) {
+    .main-header {
+      width: 1150px; } }
 
 .main-header__title--hidden:not(:focus):not(:active) {
   position: absolute;
@@ -424,9 +432,9 @@ template {
   min-width: 320px;
   margin: 0 auto;
   border-bottom: 1px solid #000; }
-  @media (min-width: 768px) {
+  @media (min-width: 660px) {
     .main-header__header-top {
-      width: 768px; } }
+      width: 660px; } }
   @media (min-width: 1150px) {
     .main-header__header-top {
       width: 1150px; } }
@@ -440,10 +448,10 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  @media (min-width: 768px) {
+  @media (min-width: 660px) {
     .main-header__wrapper {
-      width: 668px;
-      margin: 0 50px; } }
+      width: 620px;
+      margin: 0 20px; } }
   @media (min-width: 1150px) {
     .main-header__wrapper {
       width: 1050px;
@@ -452,9 +460,9 @@ template {
 .main-nav {
   min-width: 320px;
   margin: 0 auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 660px) {
     .main-nav {
-      width: 768px; } }
+      width: 660px; } }
   @media (min-width: 1150px) {
     .main-nav {
       width: 1150px; } }
@@ -508,12 +516,25 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-  @media (min-width: 768px) {
+  @media (min-width: 660px) {
     .promo {
-      width: 768px; } }
+      width: 660px; } }
   @media (min-width: 1150px) {
     .promo {
       width: 1150px; } }
+  @media (min-width: 660px) {
+    .promo {
+      background: url("../img/iphone-hand-tablet@1x.png") left bottom no-repeat, url("../img/bg-back-tablet@1x.jpg") center no-repeat;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .promo__tittle--hidden:not(:focus):not(:active) {
   position: absolute;
@@ -541,14 +562,33 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 660px) {
     .promo__wrapper {
-      width: 668px;
-      margin: 0 50px; } }
+      width: 620px;
+      margin: 0 20px; } }
   @media (min-width: 1150px) {
     .promo__wrapper {
       width: 1050px;
       margin: 0 50px; } }
+  @media (min-width: 660px) {
+    .promo__wrapper {
+      -ms-flex-preferred-size: 300px;
+          flex-basis: 300px; } }
+
+.promo__slogan {
+  display: none; }
+  @media (min-width: 660px) {
+    .promo__slogan {
+      display: block;
+      color: #ffffff;
+      font-size: 40px;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center;
+      margin-bottom: 20px; } }
 
 .promo__link {
   color: #ffffff;

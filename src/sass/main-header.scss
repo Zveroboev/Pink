@@ -1,5 +1,6 @@
 .main-header {
   background-color: #283645;
+  @include container();
 }
 
 .main-header__wrapper {

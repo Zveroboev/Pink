@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @media #{$tablet-widths} {
-    width: 768px;
+    width: 660px;
   }
 
   @media #{$desktop-widths} {
@@ -16,8 +16,8 @@
   margin: 0 20px;
 
   @media #{$tablet-widths} {
-    width: 668px;
-    margin: 0 50px;
+    width: 620px;
+    margin: 0 20px;
   }
 
   @media #{$desktop-widths} {

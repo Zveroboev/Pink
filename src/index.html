@@ -11,9 +11,11 @@
   <h1 class="main-header__title main-header__title--hidden">Мобильное приложение Pink</h1>
   <div class="main-header__header-top">
     <div class="main-header__wrapper">
-      <div class="main-header__header-logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-      </div>
+      <picture class="main-header__header-logo">
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
+      </picture>
       <div class="main-header__header-burger">
         <img src="img/icon-menu-cross.svg" alt="Открыть меню">
       </div>
@@ -38,8 +40,9 @@
 </header>
 <main>
   <section class="promo">
-    <h2 class="promo__title promo__tittle--hidden">Cкачать приложение</h2>
+    <h2 class="promo__title promo__tittle--hidden">Скачать приложение</h2>
     <div class="promo__wrapper">
+      <p class="promo__slogan">Взгляните на жизнь иначе!</p>
       <a href="#" class="promo__link">Скачать приложение</a>
       <div class="promo__mobile-shop">
         <div class="promo__mobile-shop-link promo__mobile-shop-link--ios">
