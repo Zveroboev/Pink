@@ -9,37 +9,37 @@
 <body>
 <header class="main-header">
   <h1 class="main-header__title main-header__title--hidden">Мобильное приложение Pink</h1>
-  <div class="main-header__header-top">
-    <div class="main-header__wrapper">
-      <picture class="main-header__header-logo">
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
-      </picture>
-      <div class="main-header__header-burger">
-        <img src="img/icon-menu-cross.svg" alt="Открыть меню">
+  <section class="main-header__inner-nav">
+    <div class="main-header__inner-top">
+      <div class="main-header__wrapper">
+        <picture class="main-header__header-logo">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
+        </picture>
+        <div class="main-header__header-burger">
+          <img src="img/icon-menu-cross.svg" alt="Открыть меню">
+        </div>
       </div>
     </div>
-  </div>
-  <nav class="main-nav">
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__item-link">Главная</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__item-link">Фотографии</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__item-link">Конкурс</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__item-link">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section class="promo">
+    <nav class="main-header__inner-bottom main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__item-link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__item-link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__item-link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__item-link">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section class="main-header__inner-main promo">
     <h2 class="promo__title promo__tittle--hidden">Скачать приложение</h2>
     <div class="promo__wrapper">
       <p class="promo__slogan">Взгляните на жизнь иначе!</p>
@@ -61,6 +61,9 @@
       </p>
     </div>
   </section>
+</header>
+<main>
+
 </main>
 <footer></footer>
 </body>

@@ -7,8 +7,13 @@
   padding: 0;
   margin: 0;
 
-  display: flex;
-  flex-direction: column;
+  @media #{$desktop-widths} {
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 10px;
+  }
+
 }
 
 .main-nav__item {
@@ -18,6 +23,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media #{$desktop-widths} {
+    border: none;
+  }
 }
 
 .main-nav__item-link {

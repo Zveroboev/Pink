@@ -411,9 +411,19 @@ template {
   @media (min-width: 660px) {
     .main-header {
       width: 660px; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 960px) {
     .main-header {
-      width: 1150px; } }
+      width: 960px; } }
+
+@media (min-width: 960px) {
+  .main-header__inner-nav {
+    background-color: rgba(14, 19, 24, 0.7);
+    position: absolute;
+    width: 960px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1; } }
 
 .main-header__title--hidden:not(:focus):not(:active) {
   position: absolute;
@@ -428,16 +438,19 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.main-header__header-top {
+.main-header__inner-top {
   min-width: 320px;
   margin: 0 auto;
   border-bottom: 1px solid #000; }
   @media (min-width: 660px) {
-    .main-header__header-top {
+    .main-header__inner-top {
       width: 660px; } }
-  @media (min-width: 1150px) {
-    .main-header__header-top {
-      width: 1150px; } }
+  @media (min-width: 960px) {
+    .main-header__inner-top {
+      width: 960px; } }
+  @media (min-width: 960px) {
+    .main-header__inner-top {
+      border: none; } }
 
 .main-header__wrapper {
   min-width: 280px;
@@ -452,10 +465,14 @@ template {
     .main-header__wrapper {
       width: 620px;
       margin: 0 20px; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 960px) {
     .main-header__wrapper {
-      width: 1050px;
-      margin: 0 50px; } }
+      width: 940px;
+      margin: 0 10px; } }
+
+@media (min-width: 960px) {
+  .main-header__header-burger {
+    display: none; } }
 
 .main-nav {
   min-width: 320px;
@@ -463,21 +480,23 @@ template {
   @media (min-width: 660px) {
     .main-nav {
       width: 660px; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 960px) {
     .main-nav {
-      width: 1150px; } }
+      width: 960px; } }
 
 .main-nav__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  margin: 0; }
+  @media (min-width: 960px) {
+    .main-nav__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-right: 10px; } }
 
 .main-nav__item {
   border-bottom: 1px solid black;
@@ -492,6 +511,9 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 960px) {
+    .main-nav__item {
+      border: none; } }
 
 .main-nav__item-link {
   color: #ffffff;
@@ -519,12 +541,12 @@ template {
   @media (min-width: 660px) {
     .promo {
       width: 660px; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 960px) {
     .promo {
-      width: 1150px; } }
+      width: 960px; } }
   @media (min-width: 660px) {
     .promo {
-      background: url("../img/iphone-hand-tablet@1x.png") left bottom no-repeat, url("../img/bg-back-tablet@1x.jpg") center no-repeat;
+      background: url("../img/iphone-hand-tablet@1x.png") -100px bottom no-repeat, url("../img/bg-back-tablet@1x.jpg") center no-repeat;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -535,6 +557,10 @@ template {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
+  @media (min-width: 960px) {
+    .promo {
+      background: url("../img/iphone-hand-desktop@1x.png") 40px bottom no-repeat, url("../img/bg-back-desktop@1x.jpg") center no-repeat;
+      min-height: 853px; } }
 
 .promo__tittle--hidden:not(:focus):not(:active) {
   position: absolute;
@@ -566,10 +592,10 @@ template {
     .promo__wrapper {
       width: 620px;
       margin: 0 20px; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 960px) {
     .promo__wrapper {
-      width: 1050px;
-      margin: 0 50px; } }
+      width: 940px;
+      margin: 0 10px; } }
   @media (min-width: 660px) {
     .promo__wrapper {
       -ms-flex-preferred-size: 300px;

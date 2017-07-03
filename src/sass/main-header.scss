@@ -3,8 +3,15 @@
   @include container();
 }
 
-.main-header__wrapper {
+.main-header__inner-nav {
 
+  @media #{$desktop-widths} {
+    background-color: rgba(#0e1318, 0.7);
+    position: absolute;
+    width: 960px;
+    display: flex;
+    z-index: 1;
+  }
 }
 
 .main-header__title--hidden:not(:focus):not(:active) {
@@ -23,10 +30,14 @@
   overflow: hidden;
 }
 
-.main-header__header-top{
+.main-header__inner-top {
   @include container();
 
   border-bottom: 1px solid #000;
+
+  @media #{$desktop-widths} {
+    border: none;
+  }
 }
 
 .main-header__wrapper {
@@ -34,4 +45,11 @@
 
   display: flex;
   justify-content: space-between;
+}
+
+.main-header__header-burger {
+
+  @media #{$desktop-widths} {
+    display: none;
+  }
 }
