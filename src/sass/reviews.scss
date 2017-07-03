@@ -1,0 +1,41 @@
+.reviews {
+  @include container();
+}
+
+.reviews__wrapper {
+  @include wrapper();
+}
+
+.reviews__title--hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.reviews__author-name {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+}
+
+.reviews__author-detailes {
+  display: none;
+}
+
+.reviews__description {
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+}

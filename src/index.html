@@ -9,7 +9,7 @@
 <body>
 <header class="main-header">
   <h1 class="main-header__title main-header__title--hidden">Мобильное приложение Pink</h1>
-  <section class="main-header__inner-nav">
+  <div class="main-header__inner-nav">
     <div class="main-header__inner-top">
       <div class="main-header__wrapper">
         <picture class="main-header__header-logo">
@@ -38,21 +38,20 @@
         </li>
       </ul>
     </nav>
-  </section>
-  <section class="main-header__inner-main promo">
-    <h2 class="promo__title promo__tittle--hidden">Скачать приложение</h2>
+  </div>
+  <div class="main-header__inner-main promo">
     <div class="promo__wrapper">
       <p class="promo__slogan">Взгляните на жизнь иначе!</p>
       <a href="#" class="promo__link">Скачать приложение</a>
       <div class="promo__mobile-shop">
         <div class="promo__mobile-shop-link promo__mobile-shop-link--ios">
-          <img src="img/logo-apple.svg" alt="ios"  width="47" height="56">
+          <img src="img/logo-apple.svg" alt="ios" width="47" height="56">
         </div>
         <div class="promo__mobile-shop-link promo__mobile-shop-link--android">
-          <img src="img/logo-android.svg" alt="android"  width="43" height="47">
+          <img src="img/logo-android.svg" alt="android" width="43" height="47">
         </div>
         <div class="promo__mobile-shop-link promo__mobile-shop-link--winstore">
-          <img src="img/logo-microsoft.svg" alt="winstore"  width="44" height="41">
+          <img src="img/logo-microsoft.svg" alt="winstore" width="44" height="41">
         </div>
       </div>
       <p class="promo__descr">
@@ -60,10 +59,74 @@
         <span class="promo__descr-inner">Windows Phone, OS X, Windows 8</span>
       </p>
     </div>
-  </section>
+  </div>
 </header>
 <main>
-
+  <section class="about-us">
+    <h2 class="about-us__title about-us__title--hidden">Наши преимущества</h2>
+    <div class="about-us__top">
+      <p class="about-us__top-title">Устали от серости мегаполиса?</p>
+      <p class="about-us__top-title">Нам есть, что вам
+        предложить!</p>
+    </div>
+    <ul class="about-us__bottom">
+      <li class="about-us__bottom-inner">
+        <b class="about-us__inner-title">Поднимает настроение</b>
+        <p class="about-us__inner-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+          несколько кликов!</p>
+      </li>
+      <li class="about-us__bottom-inner">
+        <b class="about-us__inner-title">Меняет мир вокруг</b>
+        <p class="about-us__inner-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+          усилить эффект</p>
+      </li>
+      <li class="about-us__bottom-inner">
+        <b class="about-us__inner-title">Заводит
+          новых друзей</b>
+        <p class="about-us__inner-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите
+          новых</p>
+      </li>
+    </ul>
+    <picture class="about-us__picture">
+      <source media="(min-width: 960px)"
+              srcset="img/img/iphone-screen-3-desktop@1x.png, img/img/iphone-screen-3-desktop@2x.png 2x">
+      <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
+      <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Mobile screen">
+    </picture>
+  </section>
+  <section class="reviews">
+    <div class="reviews__wrapper theme__wrapper">
+      <h2 class="reviews__title reviews__title--hidden">Отзывы</h2>
+      <div class="reviews__slider slider">
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <span class="reviews__author-detailes">25 лет, водитель трамвая</span>
+          <p class="reviews__description">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!&#187;</p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item slider__item--hidden">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <span class="reviews__author-detailes">25 лет, водитель трамвая</span>
+          <p class="reviews__description">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!&#187;</p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item slider__item--hidden">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <span class="reviews__author-detailes">25 лет, водитель трамвая</span>
+          <p class="reviews__description">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!&#187;</p>
+        </blockquote>
+        <div class="reviews__pagination slider__pagination">
+          <span class="slider__pagination-item slider__pagination-item--active"></span>
+          <span class="slider__pagination-item"></span>
+          <span class="slider__pagination-item"></span>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <footer></footer>
 </body>
